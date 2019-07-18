@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="{Binding Topic}"
+             x:Class="TodoApp.pages.NewTodoPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Make as Done" />
+                <Switch IsToggled="{Binding IsDone}"/>
+            </StackLayout>
+            <Label Text="Topic" />
+            <Entry Text="{Binding Topic}" />
+            <Label Text="Detail" />
+            <Entry Text="{Binding Detail}" />
+            <Label Text="lastmodified" />
+            <Label Text="{Binding TimeStamp}" />
+            <Button Text="Save" Clicked="Save_Clicked"/>
+            <Button Text="Delete" Clicked="Delete_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TodoApp.View1">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+            <Image Source="note_ico.png" HeightRequest="45" VerticalOptions="CenterAndExpand" />
+            <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <Label Text="ทดสอบ" TextColor="#34495e" FontSize="Large" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+                <Label Text="asdsadsasa"  VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+            <Label Text="19/9/2019 13:39" TextColor="#bdc3c7" VerticalOptions="StartAndExpand" HorizontalOptions="EndAndExpand"/>
+            <Image Source="checked.png" HeightRequest="15" IsVisible="False"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
